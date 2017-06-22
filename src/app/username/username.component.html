@@ -1,0 +1,14 @@
+<h2>User</h2>
+
+<input type="text"
+       class="form-control"
+       [(ngModel)]="username" 
+       (input)="onUpdateUserName($event)">
+
+<br/>
+
+<button class="btn btn-primary" 
+       [disabled]="!allowClickButton" 
+       (click)="submitUsername()">Add User!</button>
+
+<p>The username is: {{username}}</p>
