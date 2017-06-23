@@ -11,6 +11,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SuccessalertComponent } from './successalert/successalert.component';
 import { UsernameComponent } from './username/username.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UsernameComponent } from './username/username.component';
     TopbarComponent,
     SidebarComponent,
     SuccessalertComponent,
-    UsernameComponent
+    UsernameComponent,
+    DetailsComponent    
   ],
   imports: [
     BrowserModule,
