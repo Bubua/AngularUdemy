@@ -2,4 +2,11 @@
         (click)="toggleParagraph()"
 >Display Details</button>
 
-<p [ngStyle]="{display: false}">Content of your choice</p>
+<p *ngIf="displayParagraph">Content of your choice</p>
+
+
+
+<p  *ngFor="let timestamp of timestampClicks; let i = index"
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+    [ngClass]="{fifthElement : i >= 4 }"
+>{{ timestamp }}</p>

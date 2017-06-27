@@ -23,7 +23,7 @@ import { DetailsComponent } from './details/details.component';
     SidebarComponent,
     SuccessalertComponent,
     UsernameComponent,
-    DetailsComponent    
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

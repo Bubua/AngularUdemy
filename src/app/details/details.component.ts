@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
- displayParagraph = false;
+ displayParagraph =true;
  timestampClicks = [];
 
   constructor() { }
@@ -15,11 +15,10 @@ export class DetailsComponent implements OnInit {
   }
 
   toggleParagraph() {
-      var d = new Date();
-      this.timestampClicks.push(d.getTime());
+      this.displayParagraph = this.displayParagraph === false ? true : false;
+          
+      this.timestampClicks.push(new Date());
+      console.log(this.timestampClicks);
   }
-  
-  getDisplay() {
-       return this.displayParagraph === false ? true : false;
-  }
+
 }
